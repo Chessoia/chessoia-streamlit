@@ -1,11 +1,8 @@
 import streamlit as st
-import numpy as np
-import pandas as pd
-from PIL import Image
 import time
 
-st.title('Streamlit')
-st.write('Progress Barの表示')
+st.title('Streamlitの勉強')
+st.write('Progress Bar')
 
 latest_interation = st.empty()
 bar = st.progress(0)
@@ -16,12 +13,12 @@ for i in range(100):
     bar.progress(i+1)
     time.sleep(0.1)
 
-expander = st.beta_expander('問い合わせ1')
-expander.write('問い合わせ回答')
-expander = st.beta_expander('問い合わせ2')
-expander.write('問い合わせ回答')
-expander = st.beta_expander('問い合わせ3')
-expander.write('問い合わせ回答')
+expander = st.beta_expander('夏目漱石')
+expander.write('坊ちゃん')
+expander = st.beta_expander('太宰治')
+expander.write('人間失格')
+expander = st.beta_expander('川端康成')
+expander.write('雪国')
 
 
 
